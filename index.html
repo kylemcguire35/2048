@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="onResize()">
+    <header>
+        <div class="header-container">
+            <section class="header">
+                <a href="#">
+                    <img src="images/logo.png"  class="logo" alt="logo">
+                </a>
+                <a href="#">
+                    <div class="hide-desktop mobile-btn-container">
+                        <img class="mobile-btn nav-btn" id="open-nav" src="images/menu.png" alt="menu">
+                        <div class="mobile-btn-background"></div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="hide-desktop mobile-btn-container">
+                        <img class="mobile-btn nav-btn hide-mobile" id="close-nav" src="images/exit.png" alt="exit">
+                        <div class="mobile-btn-background"></div>
+                    </div>
+                </a>
+            </section> 
+
+    <!--NAVIGATION-->
+            <!--Mobile-->
+            <div class="hide-mobile hide-desktop" id="dark-section"></div>
+            <nav class="hide-mobile hide-desktop navigation-mobile">
+                <ul>
+                    <li id="menu-btn">
+                        <a href="#">Menu</a>
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                    </li>
+                    <li>
+                        <a href="#">Rewards</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="next-steps">
+                    <a class="find-store" href="#">
+                        <img src="images/location.png" alt="Location">
+                        <p>Find a store</p>
+                    </a>
+                    <div class="login">
+                        <a class="btn black-btn" href="#">Sign in</a>
+                        <a class="btn bw-btn" href="#">Join now</a>
+                    </div>
+                </div>
+            </nav>
+            <section class="ext-menu hide-mobile hide-desktop">
+                <ul>
+                    <li id="exit-menu">
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">All products</a>
+                    </li>
+                    <li>
+                        <a href="#">Featured</a>
+                    </li>
+                    <li>
+                        <a href="#">Previous Orders</a>
+                    </li>
+                    <li>
+                        <a href="#">Favorite Products</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!--Desktop-->
+            <nav class="show-desktop hide-mobile navigation-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Rewards</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                </ul>
+                <div class="next-steps">
+                    <a class="find-store" href="#">
+                        <img src="images/location.png" alt="Location">
+                        <p>Find a store</p>
+                    </a>
+                    <div>
+                        <a class="btn black-btn" href="#">Sign in</a>
+                        <a class="btn bw-btn" href="#">Join now</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+
+<!--GREEN CONTAINERS-->
+        <section class="green-container" id="main-msg">
+            <div class="message">
+                <h1>Responding to Coronavirus</h1>
+                <p>As we continue to monitor the situation with Coronavirus (COVID-19), we are taking steps to help protect the health and well-being of our customers and partners. <a href="#">Learn more</a></p>
+            </div>
+        </section>
+
+        <section class="green-container contains-img">
+            <div class="message">
+                <h1>Things are changing, but we're still here for you.</h1>
+                <p>We have temporarily closed our in-store cafes, but select grocery and drive-thru locations remain open. Starbucks Delivers on Uber Eats is also availale in select markets. Visit our store locator for the latest store hours and open locations.</p>
+                <a class="btn white-btn" href="#">Find a store</a>
+            </div>
+            <img src="images/img1.png" alt="">
+        </section>
+
+<!--GRAY CONTAINERS-->
+        <section class="desktop-column">
+            <section class="gray-container">
+                <img src="images/img2.png" alt="">
+                <div class="message">
+                    <h1>$0 delivery fee for Starbucks orders on Uber Eats</h1>
+                    <p>Get your favorite food and drinks delivered.*</p>
+                    <a class="btn black-btn" href="#">Order now</a>
+                </div>
+            </section>
+
+            <section class="gray-container reverse">
+                <img src="images/img3.png" alt="">
+                <div class="message">
+                    <h1>Brew and enjoy from the comfort of home</h1>
+                    <p>Get your Starbucks favorites from your grocery provider.</p>
+                    <a class="btn black-btn" href="#">Learn more</a>
+                </div>
+            </section>
+        </section>
+
+        <section class="gray-container">
+            <img src="images/img4.png" alt="">
+            <div class="message">
+                <h1>Hunger is part of the crisis</h1>
+                <p>COVID-19 has caused food bank demand to spike. The Starbucks Foundation is giving $1M to Feeding America-if you're in a position to help, please give.</p>
+                <a class="btn black-btn" href="#">Donate today</a>
+            </div>
+        </section>
+
+        <section class="gray-container reverse">
+            <img src="images/img5.png" alt="">
+            <div class="message">
+                <h1>Good things are happening</h1>
+                <p>Starbucks partners and customers around the globe are supporting one another with acts of kindness, resilience and joy—making good things happen.</p>
+                <a class="btn black-btn" href="#">Find out more</a>
+            </div>
+        </section>
+
+<!--FOOTNOTE-->
+        <div class="footnote">
+            <p>*Delivery waived for a limited time. Taxes and a Service Fee still apply. A Small Order Fee will apply to orders under $10. Menu limited. Restricted delivery area. Available in participating locations only. Fee subject to change. Prices for Starbucks® items purchased through Uber Eats may be higher than posted in stores or as marked. See the Uber Eats app for details. May not be combined with other offers, discounts, or promotions.</p>
+        </div>
+    </main>
+
+    <footer>
+
+<!--FOOTER-->
+        <section class="links">
+            <div class="link-section">
+                <div class="toggle-links">
+                    <h2>About Us</h2>
+                    <div class="hide-full-desktop arrow-btn-container">
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                        <div class="arrow-btn-background"></div>
+                    </div>
+                </div>
+                <div class="links-container show-full-desktop hide-mobile 269">
+                    <ul>
+                        <li><a href="#">Heritage</a></li>
+                        <li><a href="#">Our Coffee</a></li>                    
+                        <li><a href="#">Stories and News</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Policies and Standards</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="link-section">       
+                <div class="toggle-links">
+                    <h2>Careers</h2>
+                    <div class="hide-full-desktop arrow-btn-container">
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                        <div class="arrow-btn-background"></div>
+                    </div>
+                </div>
+                <div class="links-container show-full-desktop hide-mobile 224">
+                    <ul>
+                        <li><a href="#">Culture and Values</a></li>                    
+                        <li><a href="#">Diversity and Inclusion</a></li>
+                        <li><a href="#">College Achievement Plan</a></li>
+                        <li><a href="#">U.S. Careers</a></li>
+                        <li><a href="#">International Careers</a></li>
+                    </ul>   
+                </div> 
+            </div>
+            <div class="link-section">        
+                <div class="toggle-links">
+                    <h2>Social Impact</h2>
+                    <div class="hide-full-desktop arrow-btn-container">
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                        <div class="arrow-btn-background"></div>
+                    </div>
+                </div>
+                <div class="links-container show-full-desktop hide-mobile 269">
+                    <ul>
+                        <li><a href="#">Ethical Sourcing</a></li>
+                        <li><a href="#">Leading in Sustainability</a></li>
+                        <li><a href="#">Strengthening Communities</a></li>
+                        <li><a href="#">Creating Opportunities</a></li>
+                        <li><a href="#">Global Opportunities</a></li>
+                        <li><a href="#">Global Social Impact Report</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link-section">
+                <div class="toggle-links">
+                    <h2>For Business Partners</h2>
+                    <div class="hide-full-desktop arrow-btn-container">
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                        <div class="arrow-btn-background"></div>
+                    </div>
+                </div>
+                <div class="links-container show-full-desktop hide-mobile 134">
+                    <ul>
+                        <li><a href="#">Landlord Support Center</a></li>
+                        <li><a href="#">Suppliers</a></li>
+                        <li><a href="#">Corporate Gift Card Sales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link-section">
+                <div class="toggle-links">
+                    <h2>Ways To Order</h2>
+                    <div class="hide-full-desktop arrow-btn-container">
+                        <img class="arrow-btn" src="images/arrow.png" alt="arrow">
+                        <div class="arrow-btn-background"></div>
+                    </div>
+                </div>
+                <div class="links-container show-full-desktop hide-mobile 179">
+                    <ul>                    
+                        <li><a href="#">Order on the Web</a></li>
+                        <li><a href="#">Download the App</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Google Assistant</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+<!--SOCIAL MEDIA-->
+        <section class="social-media">
+            <a href="#">
+                <img src="images/spotify.png" alt="">
+                <div class="social-btn-background"></div>
+            </a>
+            <a href="#">
+                <img src="images/facebook.png" alt="">
+                <div class="social-btn-background"></div>
+            </a>
+            <a href="#">
+                <img src="images/pinterest.png" alt="">
+                <div class="social-btn-background"></div>
+            </a>
+            <a href="#">
+                <img src="images/instagram.png" alt="">
+                <div class="social-btn-background"></div>
+            </a>
+            <a href="#">
+                <img src="images/youtube.png" alt="">
+                <div class="social-btn-background"></div>
+            </a>
+            <a href="#">
+                <img src="images/twitter.png" alt="">
+                <div class="social-btn-background"></div>
+            </a>
+        </section>
+
+<!--LINKS-->
+        <ul class="fine-print">
+            <li class="no-border">
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Terms of Use</a>
+            </li>
+            <li>
+                <a href="#">CA Supply Chain Act</a>
+            </li>
+            <li>
+                <a href="#">Submit Your Idea</a>
+            </li>
+        </ul>
+
+<!--COPYRIGHT-->
+        <div class="copyright">
+            <p>&copy; 2020 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
