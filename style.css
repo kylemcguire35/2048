@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 248, 239);
+}
+
+.top-container {
+    display: flex;
+    position: relative;
+    width: 450px;
+    margin: 20px auto;
+}
+
+.title {
+    color: rgb(119, 110, 101);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+}
+
+.new-game-btn {
+    position: absolute;
+    padding: 12px 20px;
+    right: 0px;
+    bottom: 12px;
+    border: none;
+    border-style: none;
+    border-radius: 3px;
+    background-color: rgb(143, 122, 102);
+    color: rgb(250, 248, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.new-game-btn:hover {
+    cursor: pointer;
+}
+
+.grid {
+    margin: auto;
+    padding: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    background-color: rgb(187, 173, 160);
+    border-radius: 8px;
+}
+
+.grid div {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(205, 192, 180);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    border-radius: 5px;
+
+}
+
+.pop-up-animation {
+    animation: pop-up forwards 0.15s;
+}
+
+@keyframes pop-up {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.merge-animation {
+    animation: merge forwards 0.15s;
+}
+
+@keyframes merge {
+    from {
+        transform: scale(1.25);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/**UP**/
+.slide-up-1 {
+    animation: slide-up-1 forwards 0.15s;  
+}
+
+@keyframes slide-up-1 {
+    from {
+        transform: translateY(110px);
+    }   
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.slide-up-2 {
+    animation: slide-up-2 forwards 0.15s;  
+}
+
+@keyframes slide-up-2 {
+    from {
+        transform: translateY(220px);
+    }   
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.slide-up-3 {
+    animation: slide-up-3 forwards 0.15s;  
+}
+
+@keyframes slide-up-3 {
+    from {
+        transform: translateY(330px);
+    }   
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+/**DOWN**/
+.slide-down-1 {
+    animation: slide-down-1 forwards 0.15s;  
+}
+
+@keyframes slide-down-1 {
+    from {
+        transform: translateY(-110px);
+    }   
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.slide-down-2 {
+    animation: slide-down-2 forwards 0.15s;  
+}
+
+@keyframes slide-down-2 {
+    from {
+        transform: translateY(-220px);
+    }   
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.slide-down-3 {
+    animation: slide-down-3 forwards 0.15s;  
+}
+
+@keyframes slide-down-3 {
+    from {
+        transform: translateY(-330px);
+    }   
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+/**LEFT**/
+.slide-left-1 {
+    animation: slide-left-1 forwards 0.15s;  
+}
+
+@keyframes slide-left-1 {
+    from {
+        transform: translateX(110px);
+    }   
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.slide-left-2 {
+    animation: slide-left-2 forwards 0.15s;  
+}
+
+@keyframes slide-left-2 {
+    from {
+        transform: translateX(220px);
+    }   
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.slide-left-3 {
+    animation: slide-left-3 forwards 0.15s;  
+}
+
+@keyframes slide-left-3 {
+    from {
+        transform: translateX(330px);
+    }   
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+/**RIGHT**/
+.slide-right-1 {
+    animation: slide-right-1 forwards 0.15s;  
+}
+
+@keyframes slide-right-1 {
+    from {
+        transform: translateX(-110px);
+    }   
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.slide-right-2 {
+    animation: slide-right-2 forwards 0.15s;  
+}
+
+@keyframes slide-right-2 {
+    from {
+        transform: translateX(-220px);
+    }   
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.slide-right-3 {
+    animation: slide-right-3 forwards 0.15s;  
+}
+
+@keyframes slide-right-3 {
+    from {
+        transform: translateX(-330px);
+    }   
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
